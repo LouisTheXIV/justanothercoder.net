@@ -1,2 +1,3 @@
 # justanothercoder.net
-justanothercoder.net website
+Source code for https://justanothercoder.net
+Feel free to contribute to this project
