@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects ~ JustAnotherCoder.net</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.ico') }}"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/style.css') }}">
+        <script src="{{url_for('static', filename='javascript/script.js')}}"></script> 
+    </head>
+    <body>    
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/" onclick="window.location.href = document.location.origin; return false;">Home</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/games'; return false;">Games</a></li>
+                    <li class="active"><a href="/" onclick="window.location.href = document.location.origin + '/projects'; return false;">Projects</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/contact'; return false;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="bio">
+                Space Clicker is a mobile game made with Unity.<br>It is currently in early development, below are some images from the latest build. 
+                <a href="https://justanothercoder.net/clicker" target="_blank" rel="noopener noreferrer">Download latest stable build here for Android!</a>
+            </div>
+            <div style="position: absolute; top: 85%; left: 25%; transform: translate(-50%, -25%);">
+                <img 
+                src="https://cdn.discordapp.com/attachments/806164606035951629/1037069085747453972/unknown.png" width=800, height=400>
+            </div>
+            <div style="position: absolute; top: 85%; left: 75%; transform: translate(-50%, -25%);">
+                <img
+                src="https://cdn.discordapp.com/attachments/806164606035951629/1037069077589540914/unknown.png" width=800, height=400>
+            </div>
+        </header>
+    </body>
+</html>

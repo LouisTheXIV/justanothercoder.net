@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta property="type" content="justanothercoder.net">
+        <meta property="site_name" content="Just Another Website">
+        <meta property="description" content="Just Another Coder's website. Games, interesting projects, link shortener, and more!">
+        <meta property="image" content="https://cdn.discordapp.com/attachments/806164606035951629/892498012406964224/unnamed_1.png">
+        <title>Just Another Website</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.ico') }}"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/style.css') }}">
+        <script src="{{url_for('static', filename='javascript/script.js')}}"></script> 
+    </head>
+    <body>    
+        <header>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="/" onclick="window.location.href = document.location.origin; return false;">Home</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/games'; return false;">Games</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/projects'; return false;">Projects</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/contact'; return false;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>Just Another Coder</h1>
+            </div>
+            <div class="typewriter">
+                <h1>Hello! I'm Matei, a highschool student passionate of programming.</h1>
+            </div>
+            <!---
+            <div class="typewriter2">
+                <h1>This is my website where you can find all my projects, have a look around!</h1>
+            </div>
+        -->
+            <div style="top: 90%;" class="socials">
+                <a href="https://discord.gg/xVdEsQ5gV3" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/discord-logo.png') }}" width=100, height=100>
+                </a>
+
+                <a href="https://github.com/LouisTheXIV" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/github-logo.png') }}" width=100, height=100>
+                </a>
+                  
+                <a href="https://notjustanothercoder.itch.io/" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/itch-logo.png') }}" width=100, height=100>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UChJdYcnvUGkUzl0rH4orcog" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/youtube-logo.png') }}" width=100, height=100>
+                </a>
+            </div>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact ~ JustAnotherCoder.net</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.ico') }}"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/style.css') }}">
+        <script src="{{url_for('static', filename='javascript/script.js')}}"></script> 
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body>    
+        <header>
+            <div class="main">
+                <ul>
+                    <li><a href="/" onclick="window.location.href = document.location.origin; return false;">Home</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/games'; return false;">Games</a></li>
+                    <li><a href="/" onclick="window.location.href = document.location.origin + '/projects'; return false;">Projects</a></li>
+                    <li class="active"><a href="/" onclick="window.location.href = document.location.origin + '/contact'; return false;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+
+            <div class="bio">
+                Discord: <p style="color: cyan;">n0#2180</p><br/>Email: <p style="color: cyan;">alexthegreatmatei@gmail.com</p>
+            </div>
+
+            <div class="socials">
+                <a href="https://discord.gg/xVdEsQ5gV3" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/discord-logo.png') }}" width=100, height=100>
+                </a>
+
+                <a href="https://github.com/LouisTheXIV" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/github-logo.png') }}" width=100, height=100>
+                </a>
+                  
+                <a href="https://notjustanothercoder.itch.io/" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/itch-logo.png') }}" width=100, height=100>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UChJdYcnvUGkUzl0rH4orcog" target="_blank" rel="noopener noreferrer">
+                    <img 
+                    src="{{ url_for('static', filename='images/youtube-logo.png') }}" width=100, height=100>
+                </a>
+            </div>
+        </header>
+    </body>
+</html>
